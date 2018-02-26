@@ -5,6 +5,7 @@ class UsersController < ApplicationController
     res = Net::HTTP.start(API_HOST) do |http|
       http.request(Net::HTTP::Get.new(request.fullpath))
     end
+
     render :nothing => true
     response.status = res.code
     response.body = res.body
