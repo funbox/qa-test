@@ -1,4 +1,4 @@
 QaTest::Application.routes.draw do
-  match '*path' => 'users#api'
-  root :to => 'users#api'
+  get '*path', to: 'users#api'
+  root to: 'users#api'
 end
