@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  API_HOST = 'qa-test.fun-box.ru'
+  API_HOST = 'qa-test.funbox.ru'
+
   def api
     res = Net::HTTP.start(API_HOST) do |http|
       http.request(Net::HTTP::Get.new(request.fullpath))
