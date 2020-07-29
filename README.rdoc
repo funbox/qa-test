@@ -57,3 +57,4 @@ API игнорирует специфику HTTP-статусов ответов
           "result": {"id": "2", "name": "John Doe"}
         }
 
+<b>{Вакансии в FunBox}[https://funbox.ru/vacancies]</b>
